@@ -1,15 +1,21 @@
 "use strict"
-console.log(1)
+const numberOfFilms = +prompt('сколько', '');
 
-const obj={
-    name: "Jhon",
-    age: 25,
-    isMarried: false
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-console.log(obj["name"]);
+const a = prompt('one of the films'),
+      b = prompt('what is it rating?'),
+      c= prompt('one of the films'),
+      d = prompt('what is it rating?');
 
-alert("hello");
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const category = "toys";
-console.log(`https:/someurl/${category}`);
+console.log(personalMovieDB);
+
